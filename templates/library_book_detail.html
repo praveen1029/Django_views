@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Book Page</title>
+{% endblock title %}
+
+{% block content %}
+
+{% if book_num <= 5 %}
+<h1>This is Book {{book_num}}'s detail Page.</h1>
+{% else %}
+<h1>There is only 5 books.</h1>
+{% endif %} 
+
+{% endblock content %}

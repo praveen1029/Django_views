@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Author list</title>
+{% endblock title %}
+{% block content %}
+
+<ul>
+
+	{% for object in object_list %}
+	<li><h5>{{ object.Name }} ({{ object.Age}})</h5></li>
+    {% endfor %}
+
+</ul> 
+
+{% endblock content %}
